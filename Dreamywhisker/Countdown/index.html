@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="countdown-container">
+        <h1 class="title">Countdown</h1>
+        
+        <!-- User Inputs for Custom Date and Time -->
+        <div class="input-container">
+            <label for="dateInput">Select Date: </label>
+            <input type="date" id="dateInput">
+            <label for="timeInput">Select Time: </label>
+            <input type="time" id="timeInput">
+            <button id="startCountdown" class="start-button">Start Countdown</button>
+        </div>
+        
+        <!-- Countdown Display -->
+        <div id="countdown">
+            <div class="time-box">
+                <span id="days" class="time">00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="time-box">
+                <span id="hours" class="time">00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="time-box">
+                <span id="minutes" class="time">00</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="time-box">
+                <span id="seconds" class="time">00</span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Designed by <a href="index.html">@Tahanta</a></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

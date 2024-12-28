@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    background-image: url('pic1.jpeg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */ /* Dark background for neon glow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif; /* Cyberpunk-style font */
+}
+
+/* Countdown Container */
+.countdown-container {
+    text-align: center;
+    background-color: rgba(25, 25, 25, 0.8); /* Slight transparency for layered effect */
+    border: 2px solid #ff33cc; /* Neon pink-purple border */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 51, 204, 0.7), 0 0 50px rgba(33, 255, 255, 0.4); /* Enhanced neon glow */
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Title */
+.title {
+    color: #ff33cc; /* Neon pink-purple */
+    font-size: 2.5rem;
+    font-family: "Orbitron", sans-serif;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px #ff33cc, 0 0 30px #ff33cc, 0 0 40px #ff33cc; /* Neon glow effect */
+}
+
+/* Input Container */
+.input-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Labels */
+label {
+    font-size: 1rem;
+    color: #33ffcc; /* Neon cyan */
+}
+
+/* Input Fields */
+input {
+    padding: 5px;
+    border: 2px solid #00ccff; /* Neon cyan border */
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #1a1a1a; /* Dark input background */
+    color: #ff33cc; /* Neon pink-purple text */
+    outline: none;
+}
+
+/* Start Button */
+.start-button {
+    background-color: #00ccff; /* Neon cyan */
+    color: #0d0d0d; /* Dark button text */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff; /* Neon glow effect */
+}
+
+.start-button:hover {
+    background-color: #ff33cc; /* Neon pink-purple on hover */
+    box-shadow: 0 0 15px #ff33cc, 0 0 30px #ff33cc; /* Enhanced neon glow on hover */
+}
+
+/* Countdown Display */
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+/* Time Box */
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1); /* Subtle glow effect */
+    width: 70px;
+}
+
+/* Time Text */
+.time {
+    font-size: 2.5rem;
+    color: #00ccff; /* Neon cyan */
+    text-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff; /* Neon glow effect */
+}
+
+/* Label Text */
+.label {
+    font-size: 1rem;
+    color: #ff33cc; /* Neon pink-purple */
+    margin-top: 5px;
+    text-shadow: 0 0 5px #ff33cc; /* Neon glow effect */
+}
+
+
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #051612; /* Neon cyan text */
+    font-size: 1rem;
+    font-family: "Orbitron", sans-serif;
+    text-shadow: 0 0 10px #33ffcc, 0 0 20px #33ffcc, 0 0 30px #33ffcc; /* Neon glow effect */
+    opacity: 0.8;
+}
+
+.footer a {
+    color: #79055c; /* Neon pink-purple for the link */
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.footer a:hover {
+    color: #00ccff; /* Neon cyan on hover */
+    text-shadow: 0 0 15px #00ccff, 0 0 25px #00ccff; /* Enhanced glow on hover */
+}

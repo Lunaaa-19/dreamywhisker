@@ -1,0 +1,337 @@
+/* Add New Task Input Styles */
+#new-task {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 12px;
+    border: 2px solid #ffb3e6; /* Light pink border */
+    border-radius: 12px; /* Rounded corners */
+    font-size: 1rem;
+    outline: none; /* Remove default outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    background: linear-gradient(45deg, #ffe0f0, #ffcccb); /* Gradient background */
+    color: #333; /* Text color */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#new-task:focus {
+    border-color: #ff66b2; /* Darker pink when focused */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Darker shadow when focused */
+}
+
+/* Category Select Styles */
+#category-select {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 12px;
+    border: 2px solid #ffb3e6; /* Light pink border */
+    border-radius: 12px; /* Rounded corners */
+    font-size: 1rem;
+    background: #fff; /* White background */
+    color: #333; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#category-select:focus {
+    border-color: #ff66b2; /* Darker pink when focused */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Darker shadow when focused */
+}
+
+/* Add Task Button Styles */
+#add-task {
+    background-color: #c2f0c2; /* Light green */
+    border: none;
+    border-radius: 12px; /* Rounded corners */
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin-top: 10px; /* Add space above button */
+}
+
+#add-task:hover {
+    background-color: #a4d8a4; /* Slightly darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+#add-task:active {
+    background-color: #8cbf8c; /* Even darker green when pressed */
+    transform: scale(0.95); /* Slightly shrink button */
+}
+
+/* General Body Styles */
+body {
+    font-family: Candara, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    background-image: url('https://images6.alphacoders.com/132/1323582.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #c71585; /* Dark shade of pink */
+    padding: 10px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Timer Section Styles */
+#timer {
+    background: linear-gradient(to bottom, #ffebf0, #ff4d6d);
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+
+.character video {
+    width: 100%;
+    height: auto;
+}
+
+.timer-display h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+/* General Controls Button Styles */
+button.controls {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    outline: none;
+    position: relative;
+}
+
+/* Button Colors */
+button.controls.start {
+    background-color: #ffcccb;
+    color: #fff;
+}
+
+button.controls.pause {
+    background-color: #ffb3e6;
+    color: #fff;
+}
+
+button.controls.reset {
+    background-color: #b3e0ff;
+    color: #fff;
+}
+
+button.controls.done {
+    background-color: #c2f0c2; /* Light green for 'Done' button */
+    color: #fff;
+}
+
+/* Button Hover Effects */
+button.controls:hover {
+    background-color: #ff99a1;
+    transform: scale(1.05);
+}
+
+/* Button Active Effects */
+button.controls:active {
+    background-color: #ff6666;
+    transform: scale(0.95);
+}
+
+/* Cute Button Decorations */
+button.controls::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #ffb3e6, #ffcccb);
+    z-index: -1;
+    transition: opacity 0.3s;
+}
+
+button.controls:hover::before {
+    opacity: 0.3;
+}
+
+/* Add some cute icons or text for buttons if needed */
+button.controls.start::after {
+    content: '▶️';
+    margin-left: 8px;
+}
+
+button.controls.pause::after {
+    content: '⏸️';
+    margin-left: 8px;
+}
+
+button.controls.reset::after {
+    content: '🔄';
+    margin-left: 8px;
+}
+
+button.controls.done::after {
+    content: '✅'; /* Checkmark for 'Done' button */
+    margin-left: 8px;
+}
+
+/* Task List Container */
+#tasks {
+    margin-top: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+/* Task List Items */
+#task-list li {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space items evenly */
+    margin: 10px 0; /* Add margin for spacing between tasks */
+    padding: 10px; /* Add padding for a cleaner look */
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Alternate Background Colors */
+#task-list li:nth-child(odd) {
+    background-color: #f8d7da; /* Light pink */
+}
+
+#task-list li:nth-child(even) {
+    background-color: #d1e7dd; /* Light blue */
+}
+
+/* Task Text */
+#task-list li span {
+    flex-grow: 1; /* Allow text to take available space */
+    font-size: 14px; /* Font size for readability */
+}
+
+/* Edit and Delete Buttons */
+#task-list li button {
+    font-size: 16px; /* Larger font size for visibility */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor for buttons */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Edit Button Style */
+#task-list li .edit-btn {
+    color: #6d28d9; /* Purple color for edit */
+}
+
+/* Delete Button Style */
+#task-list li .delete-btn {
+    color: #dc3545; /* Red color for delete */
+}
+
+/* Hover Effect for Buttons */
+#task-list li button:hover {
+    transform: scale(1.2); /* Slightly increase size on hover */
+}
+
+/* Add some space between the buttons */
+#task-list li .edit-btn,
+#task-list li .delete-btn {
+    margin-left: 10px; /* Add space between buttons */
+}
+
+/* Progress Section Styles */
+#progress {
+    margin-top: 20px;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+#progress h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #c71585; /* Dark pink color */
+}
+
+#study-time, #completed-tasks {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Cute Canvas for Progress Chart */
+#progress-chart {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(45deg, #b3e0ff, #ffcccb); /* Gradient background for cuteness */
+}
+
+/* Quote Section Styles */
+#quotes {
+    margin-top: 40px;
+    width: 300px;
+    background: linear-gradient(to bottom, #ffebf0, #ff4d6d);
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#quote-display {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+#prev-quote, #next-quote {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#prev-quote:hover, #next-quote:hover {
+    background-color: #ccc;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #c71585; /* Dark shade of pink */
+    padding: 10px 0;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

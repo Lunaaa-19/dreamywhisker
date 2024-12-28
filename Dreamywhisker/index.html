@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="milky.gif" type="image/gif">
+    <title>Dreamy Whisker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+
+            <a href="/Calculator/index.html">
+                <div class="icon">
+                  <img src="Calculator.jpeg" alt="Clock">
+                </div>
+              </a>
+              
+              <a href="/To-do list/index.html">
+                <div class="icon">
+                  <img src="to.jpeg" alt="Calendar">
+                </div>
+              </a>
+              
+              <a href="/Countdown/index.html">
+                <div class="icon">
+                  <img src="count.jpeg" alt="Heart">
+                </div>
+              </a>
+              
+              <a href="/File Sharing/index.html">
+                <div class="icon">
+                  <img src="weather.jpeg" alt="Note">
+                </div>
+              </a>
+              
+        </div>
+        
+       
+
+        <div class="popup" id="draggablePopup">
+            <!-- Menu bar -->
+            <div class="menu-bar" id="menuBar">
+              <button class="minimize"></button>
+              <button class="maximize"></button>
+              <button class="close"></button>
+            </div>
+          
+            <!-- Popup content -->
+            <div class="content">
+              <img src="mocha01.gif" alt="Face">
+            </div>
+          </div>
+          
+          
+        <div class="footer">
+            <!-- Start icon on the left -->
+            <div id="start-icon" class="start-icon">
+                <img src="milk.gif" alt="Start">
+            </div>
+        
+            <!-- The new start pop-up content -->
+            <div id="start-popup" class="start-popup">
+                <div class="start-popup-content">
+                    <h2>Start Pop-Up</h2>
+                    <div class="app-grid">
+                        <!-- Example App Icons -->
+                        <div class="app-icon">
+                            <a href="/Calculator/index.html">
+                              <img src="Calculator.jpeg" alt="App 1">
+                            </a>
+                            <p>Calculator</p>
+                          </div>
+                          
+                          <div class="app-icon">
+                            <a href="/To-do list/index.html">
+                              <img src="to.jpeg" alt="App 2">
+                            </a>
+                            <p>To-do List</p>
+                          </div>
+                          
+                          <div class="app-icon">
+                            <a href="/Countdown/index.html">
+                              <img src="count.jpeg" alt="App 3">
+                            </a>
+                            <p>Countdown</p>
+                          </div>
+                          
+                          <div class="app-icon">
+                            <a href="/File Sharing/index.html">
+                              <img src="weather.jpeg" alt="App 4">
+                            </a>
+                            <p>File Sharing</p>
+                          </div>
+
+                          <div class="app-icon">
+                            <a href="/study-buddy/src/index.html">
+                              <img src="heart.jpeg" alt="App 4">
+                            </a>
+                            <p>Study Buddy</p>
+                          </div>
+                          
+                          
+                          
+                        <!-- Add more app icons here -->
+                    </div>
+                    <button id="close-popup">Close</button>
+                </div>
+            </div>
+        
+            <span id="date-time"></span>
+        </div>
+        
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

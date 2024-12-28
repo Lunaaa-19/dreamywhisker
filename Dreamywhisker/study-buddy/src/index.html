@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Study Buddy</h1>
+    </header>
+    <main>
+        <section id="timer">
+            <div class="character">
+                <video id="anime-video" width="320" height="240" muted loop>
+                    <source src="https://v1.pinimg.com/videos/mc/720p/8f/a8/7b/8fa87b721b8860fe99093cbc0abefb75.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+
+<script>
+    document.getElementById('kawaii-tracker-button').addEventListener('click', () => {
+        window.location.href = 'tracker.html';
+    });
+</script>
+
+
+            <div class="timer-display">
+                <h2>00:00</h2>
+            </div>
+            <div class="controls">
+                <button id="start" class="controls start">Start</button>
+                <button id="pause" class="controls pause">Pause</button>
+                <button id="reset" class="controls reset">Reset</button>
+                <button id="done" class="controls done">Done</button>
+            </div>
+        </section>
+
+        <section id="tasks">
+            <h2>Task List</h2>
+            <ul id="task-list">
+                <!-- Example of a task item -->
+                <li>
+                    <span>Example Task (Category)</span>
+ 
+                    <button class="delete-btn">❌</button>
+                </li>
+                <!-- Additional task items will be dynamically added here -->
+            </ul>
+            <input type="text" id="new-task" placeholder="Add a new task">
+            <select id="category-select">
+                <option value="study">Study</option>
+                <option value="personal">Personal</option>
+                <option value="other">Other</option>
+            </select>
+            <button id="add-task" class="controls add-task">Add Task</button>
+        </section>
+
+        <section id="quotes">
+            <h2>Motivational Quotes</h2>
+            <div id="quote-display">Start your study session!</div>
+            <div>
+                <button id="prev-quote" aria-label="Previous Quote">◀</button>
+                <button id="next-quote" aria-label="Next Quote">▶</button>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Study Buddy</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

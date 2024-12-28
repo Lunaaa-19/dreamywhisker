@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Caveat+Brush&family=Eczar:wght@400..800&family=Indie+Flower&family=Passion+One:wght@400;700;900&family=Sofia&display=swap');
+
+body {
+  font-family: "Caveat Brush", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-image: url('back1.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */ /* Dark background for neon glow */
+}
+
+/* Sidebar styling */
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90px;
+  height: 85%;
+  background-color: #d806b100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 15px;
+  gap: 1px;
+}
+
+/* Icon container styling */
+.sidebar .icon {
+  width: 95px; /* Set width of the icon container */
+  height: 95px; /* Set height of the icon container */
+  background-color: #ffffff; /* White background for the icon container */
+  border-radius: 5px; /* Rounded corners */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow */
+  overflow: visible; /* Allow shadow to be visible outside the container */
+}
+
+/* Styling the images inside the icons */
+.sidebar .icon img {
+  width: 100%;    /* Make the image fill the width of the icon container */
+  height: 100%;   /* Make the image fill the height of the icon container */
+  object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+}
+
+/* Hover effect for the image inside the icon */
+.sidebar .icon img:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 182, 193, 0.7); /* Soft pink glow shadow */
+}
+
+.popup {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  width: 280px;
+  height: 290px;
+  border-radius: 15px;
+  background-color: #ffeaf56b;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Allow menu bar and content to stack */
+  overflow: hidden;
+  cursor: grab; /* Show grab cursor for dragging */
+}
+
+/* Add the menu bar at the top of the popup */
+.popup .menu-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #ff4a9e73; /* Light pink color for kawaii look */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align buttons to the right */
+  padding: 20 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: grab; /* Grab cursor to indicate draggable area */
+}
+
+/* Menu bar buttons */
+.popup .menu-bar button {
+  width: 20px;
+  height: 20px;
+  margin: 0 3px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.popup .menu-bar button.minimize {
+  background-color: #ffcc00b4; /* Yellow for minimize */
+}
+
+.popup .menu-bar button.maximize {
+  background-color: #00cc99ab; /* Green for maximize */
+}
+
+.popup .menu-bar button.close {
+  background-color: #ff6666a8; /* Red for close */
+}
+
+.popup .menu-bar button:hover {
+  filter: brightness(1.2); /* Slightly brighten button on hover */
+}
+
+/* Popup content styling */
+.popup .content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffeaf5d2; /* Match the popup background */
+}
+
+.popup .content img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/* Footer styling */
+.footer {
+  position: absolute;
+  left: 1px;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  background-color: #ff4a9e73;
+  display: flex;
+  justify-content: space-between; /* Space between start icon and date */
+  align-items: center;
+  padding: 0 20px;
+  font-size: 24px;
+}
+
+/* Start icon styling */
+.start-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden; /* Ensures the image stays within the circle */
+}
+
+/* Styling the image inside the start icon */
+.start-icon img {
+  width: 100%;   /* Make the image fill the circle's width */
+  height: 100%;  /* Make the image fill the circle's height */
+  object-fit: cover;  /* Ensures the image scales and covers the circle */
+}
+
+
+
+
+
+/* Start Pop-Up Styling */
+.start-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.start-popup-content {
+  background-color: rgba(221, 138, 203, 0.644);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 800px; /* Adjusted width for grid layout */
+  height: 490px; /* Adjusted height for 4x6 grid */
+  display: flex;
+  flex-direction: column;
+  gap: 1px; /* Spacing between title and grid */
+}
+
+/* App Grid Layout */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(6, 1fr); /* 6 rows */
+  gap: 10px; /* Spacing between app icons */
+  flex-grow: 1; /* Ensures grid takes up available space */
+  overflow-y: auto; /* Scroll if content exceeds height */
+}
+
+
+.app-icon img {
+  width: 95px; /* Set icon width to 95px */
+  height: 95px; /* Set icon height to 95px */
+  margin-bottom: 0px; /* Space between icon and name */
+  object-fit: cover; /* Ensure the icon fills the space */
+  border-radius: 5px; /* Optional: Slight rounding for a cute look */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+}
+
+.app-icon img:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 182, 193, 0.7); /* Soft pink glow shadow */
+}
+
+.app-icon p {
+  font-size: 18px; /* Adjusted font size for names */
+  color: #000000; /* Text color */
+  margin: 0;
+  word-wrap: break-word; /* Break long names onto the next line if necessary */
+}
+
+
+#close-popup {
+  background-color: #fa83e0d3; /* Red color */
+  width: 10%;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);              /* White text */
+  border: none;              /* No border */
+  font-family: "Caveat Brush", serif;
+  padding: 10px 20px;        /* Padding for size */
+  font-size: 16px;           /* Text size */
+  cursor: pointer;          /* Cursor changes to pointer on hover */
+  border-radius: 5px;        /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}

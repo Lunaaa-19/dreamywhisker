@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Oleo+Script:wght@400;700&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+
+        <!-- Input field to add tasks -->
+        <input type="text" id="new-task-input" placeholder="Add a new task">
+        <button id="add-task-btn">Add Task</button>
+
+        <!-- Task filters -->
+        <div class="filter-buttons">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="task-list"></ul>
+
+        <!-- Clear completed tasks -->
+        <button id="clear-completed-btn">Clear Completed Tasks</button>
+    </div>
+
+    <div class="footer">
+        <p>Designed by <a href="index.html">@Tahanta</a></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
